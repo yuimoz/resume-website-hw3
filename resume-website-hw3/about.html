@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About</title>
+      <!--custom css element-->
+      <style>
+         featured-text {
+            display: block;
+            border-left: 5px solid #3a3944;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ffaef4;
+            font-style: italic;
+         }
+      </style>
+      <!--custom hello world element-->
+      <script>
+         class HelloWebsite extends HTMLElement {
+            constructor() {
+               super();
+               console.log("Hello World!");
+            }
+         }
+         customElements.define('hello-website', HelloWebsite);
+      </script>
+   </head>
+   <body>
+      <hello-website></hello-website>
+      <header>
+         <nav>
+            <a href="/index.html">home</a> |
+            <a href="/about.html">about</a> |
+            <a href="/education.html">education</a> |
+            <a href="/projects.html">projects</a>|
+            <a href="/contact.html">contact</a>
+         </nav>
+      </header>    
+      <h1>About me page</h1>
+      <h3><strong>below you can learn more about who i am</strong></h3>
+      <p>hello my name is viann i am a <span>computer science major</span> at ucsd.</p>
+      <picture>
+         <img src="test.png" alt="picture test"/>
+      </picture>
+      <p>testing paragraph bio</p>
+      <br>
+      <section>
+         <h2>Skills section</h2>
+         <em>test subtitle</em>
+         <p>paragraph about skills</p>
+         <br>
+      </section>
+      <section>
+         <h2>Goals section</h2>
+         <progress value="0.5" max="1"></progress>
+         <em>test subtitle</em>
+         <p>paragraph about goals</p>
+         <ul>
+            <li>goal 1</li>
+            <li>goal 2</li>
+            <li>goal 3</li>
+            <li>goal 4</li>
+         </ul>
+         <br>
+      </section>
+      <section>
+         <h2>Interests section</h2>
+         <em>test subtitle</em>
+         <section>
+            <featured-text>
+               some featured text
+            </featured-text>
+         </section>
+         <p>paragraph about my interests</p>
+         <div>
+            <picture>
+               <img src="games.png" alt="thumbnail for games part"/>
+            </picture>
+            <a href="/games.html">games i like</a> 
+            <br> 
+         </div>
+         <div>
+            <picture>
+               <img src="art.png" alt="thumbnail for art part"/>
+            </picture>
+            <a href="/art.html">my art</a>
+            <br>
+         </div>
+      </section>         
+      <br>
+      <footer>
+       <nav>
+            <button type="button">LinkedIn</button>
+            <button type="button">GitHub</button>
+            <button type="button">Email</button>
+         </nav>      
+      <i>copyright logo all rights reserved etc</i>
+      </footer>
+   </body>

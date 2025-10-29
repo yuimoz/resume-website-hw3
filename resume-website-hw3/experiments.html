@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>experiments</title>
+  </head>
+
+<body>
+   <h1>exploring tags</h1>
+   <section>
+      <template id="example-template">
+         <div>
+            <h2>exploring template element</h2>
+         </div>
+      </template>
+   </section>
+
+   <section>
+      <h2>picture element</h2>
+      <h3>my dog yuki</h3>
+      <picture>
+         <img src="yuki.jpg" alt="my dog">
+      </picture>
+   </section>
+
+   <section>
+      <h2>video example</h2>
+      <video width="30%" height="30%" controls>
+         <source src="IMG_4649.mp4" type="video/mp4">
+      </video>
+   </section>
+
+   <section>
+      <h2>audio example</h2>
+      <audio controls>
+         <source src="audio.mp3" type="audio/mpeg">
+      </audio>
+   </section>
+   <section>
+      <h2>canvas example</h2>
+      <canvas id="myCanvas" width="300" height="150" style="border:1px solid black;"></canvas>
+      <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 30, 100, 50);
+      ctx.fill();
+      </script>
+   </section>
+</body>
